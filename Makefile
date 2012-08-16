@@ -2,12 +2,7 @@ CANOPY = ./node_modules/.bin/canopy
 NODEUNIT = node_modules/nodeunit/bin/nodeunit
 name = all
 
-parser:
-	$(CANOPY) ./parser/tank.peg tank.js
+all:
+	$(CANOPY) ./lib/parser/tank.peg
 
-test: parser
-	echo $(CANOPY)
-
-
-
-.PHONY: total
+.PHONY: all
